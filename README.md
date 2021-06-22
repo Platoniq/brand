@@ -1,3 +1,5 @@
+![Platoniq logo](./images/platoniq-logo.svg)
+
 # Platoniq Brand in Decidim instances
 
 To add files for custom Platoniq footer in Decidim instances, run:
