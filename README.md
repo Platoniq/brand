@@ -21,3 +21,10 @@ To overwrite the default Decidim footer with the custom one, create the file `ap
 ```erb
 <%= render partial: "platoniq/mini_footer" %>
 ```
+
+Finally, add the key `repository_url` to the `config/secrets.yml` with the URL of the instance's repository.
+
+```yml
+default: &default
+  repository_url: https://github.com/Platoniq/decidim-INSTANCE_NAME
+```
