@@ -1,4 +1,4 @@
-i# Specifications for visual customization of Decidim
+# Specifications for visual customization of Decidim
 
 ## References
 
