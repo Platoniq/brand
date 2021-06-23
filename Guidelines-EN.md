@@ -24,7 +24,7 @@ If you have any images that can be used as a reference in addition to a live web
 
 > **Note**: Please send the Hexadecimal code for each color(e.g. `#a0b1c2`)
 
-| Colour | Default value |
+| Color | Default value |
 |---|---|
 | Body background color | #fafafa |
 | Body background color (Alternative) | #f4f4f4 |
