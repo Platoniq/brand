@@ -1,0 +1,14 @@
+#!/bin/sh
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied. First argument should be the path to the Decidim module directory."
+    exit
+fi
+
+DECIDIM_MODULE_PATH=$1
+mkdir -p "$DECIDIM_MODULE_PATH/.github" \
+
+cp -r LICENSE-AGPLv3.txt "$DECIDIM_MODULE_PATH/LICENSE-AGPLv3.txt"
+cp -r files/README_TEMPLATE_decidim_module.md "$DECIDIM_MODULE_PATH/README.md"
+cp -r files/images "$DECIDIM_MODULE_PATH/images"
+cp -r files/.github/workflows "$DECIDIM_MODULE_PATH/.github/workflows"

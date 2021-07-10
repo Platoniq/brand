@@ -1,0 +1,23 @@
+#!/bin/sh
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied. First argument should be the path to the Decidim instance directory."
+    exit
+fi
+
+DECIDIM_INSTANCE_PATH=$1
+mkdir -p "$DECIDIM_INSTANCE_PATH/app/views" \
+"$DECIDIM_INSTANCE_PATH/app/assets/stylesheets" \
+"$DECIDIM_INSTANCE_PATH/app/assets/images" \
+"$DECIDIM_INSTANCE_PATH/config/locales" \
+"$DECIDIM_INSTANCE_PATH/.github"
+
+cp -r files/decidim/app/views/platoniq "$DECIDIM_INSTANCE_PATH/app/views"
+cp -r files/decidim/app/assets/images/platoniq "$DECIDIM_INSTANCE_PATH/app/assets/images"
+cp -r files/decidim/app/assets/stylesheets/platoniq "$DECIDIM_INSTANCE_PATH/app/assets/stylesheets"
+cp -r files/decidim/config/locales/platoniq.yml "$DECIDIM_INSTANCE_PATH/config/locales/platoniq.yml"
+
+cp -r LICENSE-AGPLv3.txt "$DECIDIM_INSTANCE_PATH/LICENSE-AGPLv3.txt"
+cp -r files/README_TEMPLATE_decidim_instance.md "$DECIDIM_INSTANCE_PATH/README.md"
+cp -r files/images "$DECIDIM_INSTANCE_PATH/images"
+cp -r files/.github/workflows "$DECIDIM_INSTANCE_PATH/.github/workflows"
