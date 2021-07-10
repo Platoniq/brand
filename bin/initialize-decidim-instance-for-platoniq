@@ -6,13 +6,14 @@ if [ $# -eq 0 ]
 fi
 
 DECIDIM_INSTANCE_PATH=$1
-mkdir -p "$DECIDIM_INSTANCE_PATH/app/views" \
+mkdir -p "$DECIDIM_INSTANCE_PATH/app/views/layouts" \
 "$DECIDIM_INSTANCE_PATH/app/assets/stylesheets" \
 "$DECIDIM_INSTANCE_PATH/app/assets/images" \
 "$DECIDIM_INSTANCE_PATH/config/locales" \
 "$DECIDIM_INSTANCE_PATH/.github"
 
 cp -r files/decidim/app/views/platoniq "$DECIDIM_INSTANCE_PATH/app/views"
+cp -r files/decidim/app/views/layouts/decidim "$DECIDIM_INSTANCE_PATH/app/views/layouts"
 cp -r files/decidim/app/assets/images/platoniq "$DECIDIM_INSTANCE_PATH/app/assets/images"
 cp -r files/decidim/app/assets/stylesheets/platoniq "$DECIDIM_INSTANCE_PATH/app/assets/stylesheets"
 cp -r files/decidim/config/locales/platoniq.yml "$DECIDIM_INSTANCE_PATH/config/locales/platoniq.yml"

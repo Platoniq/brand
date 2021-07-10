@@ -30,6 +30,30 @@ default: &default
   repository_url: https://github.com/Platoniq/decidim-INSTANCE_NAME
 ```
 
+# Platoniq Brand in Decidim modules
+
+To add files to follow Platoniq guidelines for a Decidim module, run:
+
+```sh
+chmod +x ./bin/initialize-decidim-module-for-platoniq
+
+./bin/initialize-decidim-module-for-platoniq PATH_TO_DECIDIM_MODULE
+```
+
+To import the `platoniq.scss`, you need to add it in `app/stylesheets/decidim.scss` after the `@import "decidim/application";` line, like this:
+
+```scss
+@import "decidim/application";
+@import "platoniq/platoniq";
+```
+
+Finally, add the key `repository_url` to the `config/secrets.yml` with the URL of the instance's repository.
+
+```yml
+default: &default
+  repository_url: https://github.com/Platoniq/decidim-INSTANCE_NAME
+```
+
 ## Good Practices Checklist
 
 ### Repository
