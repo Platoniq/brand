@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            letter-spacing: -2px;
+            font-size: 3rem;
+        }
+        
+        .goteo-logo {
+            font-weight: 700;
+        }
+        
+        .title {
+            font-weight: 300;
+            font-size: 2rem;
+        }
+        
+        .squares {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            justify-items: center;
+        }
+        
+        .square {
+            background-color: #19b4b2;
+            color: white;
+            width: 20rem;
+            height: 20rem;
+            text-align: center;
+            display: grid;
+            grid-template-rows: 1fr 3rem 1fr;
+        }
+        
+        .square .icon {
+            grid-row: 1;
+            align-self: end;
+            justify-self: center;
+        }
+        
+        .square .goteo-logo {
+            grid-row: 2;
+        }
+        
+        .square .title {
+            grid-row: 3;
+        }
+    </style>
+
+    <div class="squares">
+
+        <div class="square">
+            <span class="icon"> 🤖 </span>
+            <span class="goteo-logo"> GOTEO </span>
+            <span class="title" style="letter-spacing: -1.4px;"> Developers </span>
+        </div>
+    </div>
+
+</body>
+
+</html>

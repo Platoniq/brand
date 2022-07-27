@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Inter';
+            letter-spacing: -2px;
+            font-size: 3rem;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .platoniq-logo {
+            font-weight: 700;
+        }
+        
+        .platoniq-logo-with-foundation {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .platoniq-foundation,
+        .platoniq-logo-with-foundation .platoniq-logo {
+            text-align: left;
+        }
+        
+        .title,
+        .platoniq-foundation {
+            font-weight: 300;
+            font-size: 2rem;
+        }
+        
+        .squares {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            justify-items: center;
+        }
+        
+        .banners {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .banner {
+            background-color: #462949;
+            color: white;
+            width: 100%;
+            height: 20rem;
+            text-align: center;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 2rem;
+        }
+        
+        .banner .platoniq-logo {
+            grid-row: 2;
+        }
+        
+        .banner .tagline {
+            align-self: end;
+            grid-row: 1;
+            font-size: 1.25rem;
+            letter-spacing: 0;
+            font-weight: 700;
+            text-align: left;
+            color: #E94668;
+        }
+        
+        .square {
+            background-color: #462949;
+            color: white;
+            width: 20rem;
+            height: 20rem;
+            text-align: center;
+            display: grid;
+            grid-template-rows: 1fr 3rem 1fr;
+        }
+        
+        .square .icon {
+            grid-row: 1;
+            align-self: end;
+            justify-self: center;
+        }
+        
+        .square .platoniq-logo {
+            grid-row: 2;
+        }
+        
+        .square .title {
+            grid-row: 3;
+        }
+    </style>
+
+
+
+    <div class="banners">
+        <div class="banner">
+            <span class="tagline">This repository is developed and maintained by</span>
+            <div class="platoniq-logo-with-foundation">
+                <span class="platoniq-logo">Platoniq</span>
+                <span class="platoniq-foundation"> Foundation </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="squares">
+
+        <div class="square">
+            <span class="icon"> ✨ </span>
+            <span class="platoniq-logo"> Platoniq </span>
+            <span class="title"> QA Team </span>
+        </div>
+
+        <div class="square">
+            <span class="icon"> 🎨 </span>
+            <span class="platoniq-logo"> Platoniq </span>
+            <span class="title" style="letter-spacing: -1.4px;"> Design Team </span>
+        </div>
+
+        <div class="square">
+            <span class="icon"> 👯‍♂️ </span>
+            <span class="platoniq-logo"> Platoniq </span>
+            <span class="title"> People </span>
+        </div>
+
+        <div class="square">
+            <span class="icon">🎯</span>
+            <span class="platoniq-logo"> Platoniq </span>
+            <span class="title"> Decidim Team </span>
+        </div>
+
+        <div class="square">
+            <span class="icon">🔧</span>
+            <span class="platoniq-logo"> Platoniq </span>
+            <span class="title"> Hacking Decidim </span>
+        </div>
+
+        <div class="square">
+            <span class="icon">🧪</span>
+            <span class="platoniq-logo"> Platoniq </span>
+            <span class="title" style="letter-spacing: -2.46px;"> Product Team </span>
+        </div>
+
+        <div class="square">
+            <span class="icon" style="filter: hue-rotate(20deg) brightness(2);">👾</span>
+            <span class="platoniq-logo"> Platoniq </span>
+            <span class="title"> Developers </span>
+        </div>
+
+        <div class="square">
+            <span class="icon" style="filter: hue-rotate(20deg) brightness(2);">👾</span>
+            <span class="platoniq-logo"> Platoniq </span>
+            <span class="title"> h4ck3rz </span>
+        </div>
+
+        <div class="square">
+            <span class="icon">🖼</span>
+            <span class="platoniq-logo"> Platoniq </span>
+            <span class="title"> inDICEs Team </span>
+        </div>
+
+        <div class="square">
+            <span class="platoniq-logo"> Platoniq </span>
+            <span class="title"> Collaborators </span>
+        </div>
+    </div>
+
+</body>
+
+</html>
