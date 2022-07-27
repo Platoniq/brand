@@ -1,4 +1,17 @@
-![Platoniq logo](./files/images/platoniq-logo.svg)
+![Platoniq logo](./logos/Platoniq_Foundation_black_en.svg)
+
+# The colors of Platoniq
+
+See the full reference in [html/colors.html](./html/colors.html)
+
+🍆 #462949
+🍓 #E94668
+💚 #99FF99
+📄 #F3F3EF
+💧 #72D8FF
+💜 #B792FF
+🍏 #99FFCC
+🍋 #FFFF99
 
 # Platoniq Brand in Decidim instances
 
@@ -10,7 +23,7 @@ chmod +x ./bin/initialize-decidim-instance-for-platoniq
 ./bin/initialize-decidim-instance-for-platoniq PATH_TO_DECIDIM_INSTANCE
 ```
 
-To import the `platoniq.scss`, you need to add it in `app/stylesheets/decidim.scss` after the `@import "decidim/application";` line, like this:
+To import the `platoniq.scss`, you need to add it in `app/packs/stylesheets/decidim.scss` after the `@import "decidim/application";` line, like this:
 
 ```scss
 @import "decidim/application";
@@ -21,6 +34,30 @@ To overwrite the default Decidim footer with the custom one, create the file `ap
 
 ```erb
 <%= render partial: "platoniq/mini_footer" %>
+```
+
+Finally, add the key `repository_url` to the `config/secrets.yml` with the URL of the instance's repository.
+
+```yml
+default: &default
+  repository_url: https://github.com/Platoniq/decidim-INSTANCE_NAME
+```
+
+# Platoniq Brand in Decidim modules
+
+To add files to follow Platoniq guidelines for a Decidim module, run:
+
+```sh
+chmod +x ./bin/initialize-decidim-module-for-platoniq
+
+./bin/initialize-decidim-module-for-platoniq PATH_TO_DECIDIM_MODULE
+```
+
+To import the `platoniq.scss`, you need to add it in `app/packs/stylesheets/decidim.scss` after the `@import "decidim/application";` line, like this:
+
+```scss
+@import "decidim/application";
+@import "platoniq/platoniq";
 ```
 
 Finally, add the key `repository_url` to the `config/secrets.yml` with the URL of the instance's repository.
